@@ -1,0 +1,2 @@
+export const ABOUT_ME_PARAGRAPH =
+  "Extremely motivated software developer with previous professional experience focused on developing high-quality and maintainable software within reasonable timeframes. Constantly honing software development skills and keeping up with contemporary software development technologies. Looking forward to applying my knowledge and experience in software development to solve challenging problems.";

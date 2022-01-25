@@ -1,9 +1,10 @@
 import Navbar from "./navbar";
 import "../styles/Header.css";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
-    <div className="header-container">
+    <div id="home" className="header-container">
       <Navbar />
       <div className="background-wrapper">
         <div className="background-cover"></div>
@@ -12,7 +13,15 @@ const Header = () => {
           <h6>Software Engineer</h6>
         </div>
         <div className="scroll-button-container">
-          <i class="fa fa-angle-down"></i>
+          <Link
+            className="link"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+          >
+            <i class="fa fa-angle-down"></i>
+          </Link>
         </div>
         <img src="/images/background" />
       </div>

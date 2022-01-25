@@ -23,22 +23,18 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects-container">
+    <div id="projects" className="projects-container">
       <h3>Projects</h3>
       {projects.map((project) => {
         return (
           <div className="project-box">
             <img src={project.projectImage} />
             <h3>{project.projectName}</h3>
-            <p>{project.projectDescription}</p>
             {project.projectFinished ? (
               <span style={{ backgroundColor: "green" }}>Finished</span>
             ) : (
               <span style={{ backgroundColor: "red" }}>In Progress</span>
             )}
-            <button class="more-info-button">
-              <i class="fa fa-plus"></i>
-            </button>
           </div>
         );
       })}

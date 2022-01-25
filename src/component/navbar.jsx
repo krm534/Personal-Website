@@ -1,27 +1,100 @@
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/Navbar.css";
+import { Link } from "react-scroll";
+import MobileNavbar from "./mobile-navbar";
 
 const Navbar = () => {
-  const sections = [
-    { id: 1, name: "About" },
-    { id: 3, name: "Projects" },
-    { id: 4, name: "Contact" },
-  ];
+  const container = useRef(0);
+  const hamburger = useRef(0);
+  const [isMobileOpen, setMobileOpen] = useState(false);
+  const [isHamburgerShowing, setHamburgerShowing] = useState(true);
 
-  const checkId = (id) => {
-    alert("Id: " + id);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (window.innerWidth > 600) {
+      setHamburgerShowing(false);
+    } else {
+      if (!isHamburgerShowing) {
+        setHamburgerShowing(true);
+      }
+    }
+  }, [isHamburgerShowing]);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    const innerHeight = window.innerHeight;
+    const innerWidth = window.innerWidth;
+
+    if (position >= innerHeight && innerWidth >= 600) {
+      container.current.style.backgroundColor = "#000";
+    } else {
+      container.current.style.backgroundColor = "transparent";
+    }
+  };
+
+  const handleResize = () => {
+    handleScroll();
+
+    if (window.innerWidth > 600) {
+      setHamburgerShowing(false);
+      setMobileOpen(false);
+    } else {
+      if (isMobileOpen) {
+        setHamburgerShowing(false);
+      } else {
+        setHamburgerShowing(true);
+      }
+    }
+  };
+
+  const setMobileOpenValue = (isOpen) => {
+    if (isOpen) {
+      setHamburgerShowing(false);
+    } else {
+      setHamburgerShowing(true);
+    }
+
+    setMobileOpen(isOpen);
   };
 
   return (
-    <div className="nav-container">
-      <ul>
-        {sections.map((section) => {
-          return (
-            <li onMouseDown={() => checkId(section.id)}>
-              <a>{section.name}</a>
-            </li>
-          );
-        })}
+    <div className="nav-container" ref={container}>
+      <MobileNavbar
+        mobile={isMobileOpen}
+        mobileOpen={setMobileOpenValue}
+        style={{ display: isMobileOpen ? "block" : "none" }}
+      />
+      <ul className="nav-list">
+        <Link activeClass="active" to="home" spy={true} smooth={true}>
+          <li>Home</li>
+        </Link>
+        <Link activeClass="active" to="about" spy={true} smooth={true}>
+          <li>About</li>
+        </Link>
+        <Link activeClass="active" to="projects" spy={true} smooth={true}>
+          <li>Projects</li>
+        </Link>
+        <Link activeClass="active" to="contact" spy={true} smooth={true}>
+          <li>Contact</li>
+        </Link>
       </ul>
+      <div
+        className="navbar-mobile-container"
+        onClick={() => setMobileOpenValue(true)}
+        ref={hamburger}
+        style={{ display: isHamburgerShowing ? "flex" : "none" }}
+      >
+        <i class="fa fa-bars"></i>
+      </div>
     </div>
   );
 };

@@ -17,9 +17,12 @@ ul {
 
 li {
   text-align: center;
-  display: inline-block;
   padding: 20px;
   cursor: pointer;
+}
+
+.nav-container > ul > li {
+  display: inline-block;
 }
 
 .nav-container > li:hover {
@@ -29,4 +32,22 @@ li {
 li > a {
   color: #fff;
   text-transform: uppercase;
+}
+
+.navbar-mobile-container {
+  padding-right: 10px;
+  padding-top: 10px;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.fa-bars {
+  padding: 5px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-list {
+    display: none;
+  }
 }

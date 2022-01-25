@@ -35,22 +35,10 @@
   margin-top: 10px;
 }
 
-.project-box > p {
-  margin-top: 10px;
-}
-
 .project-box > span {
   color: #fff;
   margin-top: 10px;
   display: inline-block;
   padding: 10px;
   border-radius: 15px;
-}
-
-.more-info-button {
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 3px;
 }

@@ -49,6 +49,8 @@
 
 .fa-angle-down {
   font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .background-wrapper > img {

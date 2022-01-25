@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   color: #000;
-  background-color: #fae0e9;
+  background-color: #6f8faf;
   text-align: center;
   display: block;
 }
@@ -21,6 +21,7 @@
   height: auto;
   border: 2px solid #000;
   margin-right: 15px;
+  margin-bottom: 10px;
   background-color: white;
   padding-bottom: 10px;
 }
@@ -32,12 +33,12 @@
 }
 
 .project-box > h3 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .project-box > span {
   color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
   display: inline-block;
   padding: 10px;
   border-radius: 15px;

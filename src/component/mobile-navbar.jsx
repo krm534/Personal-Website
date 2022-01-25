@@ -19,40 +19,16 @@ const MobileNavbar = (props) => {
         <i class="fa fa-close"></i>
       </div>
       <ul>
-        <Link
-          className="link"
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-        >
+        <Link className="link" to="home" spy={true} smooth={true}>
           <li>Home</li>
         </Link>
-        <Link
-          className="link"
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-        >
+        <Link className="link" to="about" spy={true} smooth={true}>
           <li>About</li>
         </Link>
-        <Link
-          className="link"
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-        >
+        <Link className="link" to="projects" spy={true} smooth={true}>
           <li>Projects</li>
         </Link>
-        <Link
-          className="link"
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-        >
+        <Link className="link" to="contact" spy={true} smooth={true}>
           <li>Contact</li>
         </Link>
       </ul>

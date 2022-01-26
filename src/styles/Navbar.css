@@ -9,15 +9,6 @@
   z-index: 999;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  text-align: center;
-  display: inline-block;
-}
-
 .nav-list {
   justify-content: center;
   display: flex;

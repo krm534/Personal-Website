@@ -3,21 +3,21 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projects = [
     {
-      projectImage: "/images/bike-project.png",
+      projectImage: "/images/project-images/bike-project.png",
       projectImageAlt: "Bike project Android app",
       projectName: "Bike?",
       projectDescription: "Sample Description",
       projectFinished: true,
     },
     {
-      projectImage: "/images/library-project.jpg",
+      projectImage: "/images/project-images/library-project.jpg",
       projectImageAlt: "Library background",
       projectName: "MSU Library Guides App",
       projectDescription: "Sample Description",
       projectFinished: true,
     },
     {
-      projectImage: "/images/chatroom-project.jpg",
+      projectImage: "/images/project-images/chatroom-project.jpg",
       projectImageAlt: "Person using personal computer",
       projectName: "Chatroom",
       projectDescription: "Sample Description",

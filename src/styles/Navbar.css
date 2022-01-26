@@ -28,10 +28,6 @@ li {
   cursor: pointer;
 }
 
-.nav-container > li:hover {
-  background-color: #d3d3d3;
-}
-
 li > a {
   color: #fff;
   text-transform: uppercase;

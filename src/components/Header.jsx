@@ -23,7 +23,7 @@ const Header = () => {
             <i class="fa fa-angle-down"></i>
           </Link>
         </div>
-        <img src="/images/background.jpg" />
+        <img src="/images/background.jpg" alt="Corporate office space" />
       </div>
     </div>
   );

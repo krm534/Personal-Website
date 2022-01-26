@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   z-index: 999;
+  background-color: #303030;
 }
 
 .nav-list {
@@ -19,21 +20,13 @@
   cursor: pointer;
 }
 
+.navbar-link > li:hover {
+  background-color: #444444;
+}
+
 li > a {
   color: #fff;
   text-transform: uppercase;
-}
-
-.navbar-mobile-container {
-  padding-right: 10px;
-  padding-top: 10px;
-  justify-content: right;
-  cursor: pointer;
-}
-
-.fa-bars {
-  padding: 5px;
-  font-size: 22px;
 }
 
 @media screen and (max-width: 600px) {

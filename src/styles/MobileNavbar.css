@@ -1,0 +1,35 @@
+.mobile-nav-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #303030;
+  z-index: 9999;
+}
+
+.mobile-nav-container > ul {
+  display: block;
+}
+.link > li {
+  padding: 20px;
+  display: block;
+}
+
+.link > li:hover {
+  background-color: gray;
+}
+
+.exit-container {
+  display: block;
+  justify-content: right;
+  display: flex;
+}
+
+.exit-container > i {
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

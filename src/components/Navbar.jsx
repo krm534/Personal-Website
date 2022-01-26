@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-scroll";
-import MobileNavbar from "./mobile-navbar";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const container = useRef(0);

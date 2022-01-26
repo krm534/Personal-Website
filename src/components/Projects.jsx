@@ -15,7 +15,7 @@ const Projects = () => {
       projectFinished: true,
     },
     {
-      projectImage: "/images/chatroom-project.jpeg",
+      projectImage: "/images/chatroom-project.jpg",
       projectName: "Chatroom",
       projectDescription: "Sample Description",
       projectFinished: false,

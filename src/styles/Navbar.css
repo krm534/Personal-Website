@@ -9,15 +9,6 @@
   z-index: 999;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  text-align: center;
-  display: inline-block;
-}
-
 .nav-list {
   justify-content: center;
   display: flex;
@@ -26,10 +17,6 @@ li {
 .navbar-link > li {
   padding: 20px;
   cursor: pointer;
-}
-
-.nav-container > li:hover {
-  background-color: #d3d3d3;
 }
 
 li > a {

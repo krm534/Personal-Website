@@ -13,6 +13,7 @@
 .link > li {
   padding: 20px;
   display: block;
+  cursor: pointer;
 }
 
 .link > li:hover {

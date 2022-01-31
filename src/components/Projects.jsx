@@ -5,15 +5,19 @@ import ProjectsDetail from "./ProjectsDetail";
 
 const Projects = () => {
   const [projectDetail, setProjectDetail] = useState(0);
-  const [projectDetailShowing, setProjecDetailShowing] = useState(false);
+  const [projectDetailShowing, setProjectDetailShowing] = useState(false);
 
   const handleClick = (projectId) => {
+    document.body.style.overflowY = "hidden";
     setProjectDetail(projectId);
-    setProjecDetailShowing(true);
+    setProjectDetailShowing(true);
   };
 
   const setProjectDetailsShowing = (state) => {
-    setProjecDetailShowing(state);
+    if (!state) {
+      document.body.style.overflowY = "scroll";
+    }
+    setProjectDetailShowing(state);
   };
 
   return (

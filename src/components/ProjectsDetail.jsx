@@ -12,7 +12,10 @@ const ProjectsDetail = (props) => {
         <div className="exit-button-container">
           <i class="fa fa-close" onClick={() => props.setShowing(false)}></i>
         </div>
-        <img src={projects[props.currentId].projectImage} />
+        <img
+          src={projects[props.currentId].projectImage}
+          alt={projects[props.currentId].projectImageAlt}
+        />
         <h4>{projects[props.currentId].projectName}</h4>
         <p>{projects[props.currentId].projectDescription}</p>
         {projects[props.currentId].projectTags.map((tag) => {

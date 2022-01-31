@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -11,10 +12,15 @@ body {
   font-family: "opensans-regular", sans-serif;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .container {
   margin: 0;
   padding: 0;
   display: block;
+  overflow-y: hidden;
 }
 
 ul {

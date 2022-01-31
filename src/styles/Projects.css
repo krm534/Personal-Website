@@ -38,8 +38,20 @@
 
 .project-box > span {
   color: #fff;
+  width: 200px;
+  margin: 0 auto;
   margin-top: 20px;
-  display: inline-block;
+  display: block;
   padding: 10px;
   border-radius: 15px;
+}
+
+.project-box > button {
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
 }

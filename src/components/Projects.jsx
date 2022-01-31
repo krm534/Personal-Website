@@ -1,29 +1,20 @@
+import { useState } from "react";
 import "../styles/Projects.css";
+import { projects } from "../utils/Constants";
+import ProjectsDetail from "./ProjectsDetail";
 
 const Projects = () => {
-  const projects = [
-    {
-      projectImage: "/images/project-images/bike-project.png",
-      projectImageAlt: "Bike project Android app",
-      projectName: "Bike?",
-      projectDescription: "Sample Description",
-      projectFinished: true,
-    },
-    {
-      projectImage: "/images/project-images/library-project.jpg",
-      projectImageAlt: "Library background",
-      projectName: "MSU Library Guides App",
-      projectDescription: "Sample Description",
-      projectFinished: true,
-    },
-    {
-      projectImage: "/images/project-images/chatroom-project.jpg",
-      projectImageAlt: "Person using personal computer",
-      projectName: "Chatroom",
-      projectDescription: "Sample Description",
-      projectFinished: false,
-    },
-  ];
+  const [projectDetail, setProjectDetail] = useState(0);
+  const [projectDetailShowing, setProjecDetailShowing] = useState(false);
+
+  const handleClick = (projectId) => {
+    setProjectDetail(projectId);
+    setProjecDetailShowing(true);
+  };
+
+  const setProjectDetailsShowing = (state) => {
+    setProjecDetailShowing(state);
+  };
 
   return (
     <div id="projects" className="projects-container">
@@ -38,9 +29,18 @@ const Projects = () => {
             ) : (
               <span style={{ backgroundColor: "red" }}>In Progress</span>
             )}
+            <button onClick={() => handleClick(project.projectId)}>
+              READ MORE
+            </button>
           </div>
         );
       })}
+      {projectDetailShowing && (
+        <ProjectsDetail
+          currentId={projectDetail}
+          setShowing={setProjectDetailsShowing}
+        />
+      )}
     </div>
   );
 };

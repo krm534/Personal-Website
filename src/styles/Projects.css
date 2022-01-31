@@ -51,7 +51,8 @@
   margin-top: 20px;
   cursor: pointer;
   font-size: 14px;
-  background-color: gray;
+  background-color: #6f8faf;
   border: none;
   border-radius: 10px;
+  color: #fff;
 }

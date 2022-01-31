@@ -9,15 +9,15 @@ const ProjectsDetail = (props) => {
         onClick={() => props.setShowing(false)}
       ></div>
       <div className="current-project">
-        <i class="fa fa-close" onClick={() => props.setShowing(false)}></i>
+        <div className="exit-button-container">
+          <i class="fa fa-close" onClick={() => props.setShowing(false)}></i>
+        </div>
         <img src={projects[props.currentId].projectImage} />
         <h4>{projects[props.currentId].projectName}</h4>
         <p>{projects[props.currentId].projectDescription}</p>
-        {projects[props.currentId].projectFinished ? (
-          <span style={{ backgroundColor: "green" }}>Finished</span>
-        ) : (
-          <span style={{ backgroundColor: "red" }}>In Progress</span>
-        )}
+        {projects[props.currentId].projectTags.map((tag) => {
+          return <span>{tag}</span>;
+        })}
       </div>
     </div>
   );

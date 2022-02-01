@@ -30,6 +30,30 @@
   padding-right: 25%;
 }
 
+.about-resume-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.about-resume-container > a {
+  display: block;
+  width: 200px;
+  height: auto;
+  background-color: #303030;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.about-resume-container > a > p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .about-container > p {
     padding-left: 10%;

@@ -7,7 +7,7 @@ const Projects = () => {
   const [currentProjectId, setCurrentProjectId] = useState(0);
   const [projectDetailShowing, setProjectDetailShowing] = useState(false);
 
-  const handleClick = (projectId) => {
+  const handleButtonClick = (projectId) => {
     document.body.style.overflowY = "hidden";
     setCurrentProjectId(projectId);
     setProjectDetailShowing(true);
@@ -33,7 +33,7 @@ const Projects = () => {
             ) : (
               <span style={{ backgroundColor: "red" }}>In Progress</span>
             )}
-            <button onClick={() => handleClick(project.projectId)}>
+            <button onClick={() => handleButtonClick(project.projectId)}>
               READ MORE
             </button>
           </div>
@@ -42,7 +42,7 @@ const Projects = () => {
       {projectDetailShowing && (
         <ProjectsDetail
           currentId={currentProjectId}
-          setShowing={setProjectDetailsModal}
+          setDialogShowing={setProjectDetailsModal}
         />
       )}
     </div>

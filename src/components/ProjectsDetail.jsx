@@ -6,11 +6,14 @@ const ProjectsDetail = (props) => {
     <div className="project-details-container">
       <div
         className="project-details-background"
-        onClick={() => props.setShowing(false)}
+        onClick={() => props.setDialogShowing(false)}
       ></div>
       <div className="current-project">
         <div className="exit-button-container">
-          <i class="fa fa-close" onClick={() => props.setShowing(false)}></i>
+          <i
+            class="fa fa-close"
+            onClick={() => props.setDialogShowing(false)}
+          ></i>
         </div>
         <img
           src={projects[props.currentId].projectImage}
@@ -29,7 +32,7 @@ const ProjectsDetail = (props) => {
             target="_blank"
             rel="noreferrer"
           >
-            Project Repo
+            Project Link
           </a>
         </div>
       </div>

@@ -18,9 +18,20 @@ const ProjectsDetail = (props) => {
         />
         <h4>{projects[props.currentId].projectName}</h4>
         <p>{projects[props.currentId].projectDescription}</p>
-        {projects[props.currentId].projectTags.map((tag) => {
-          return <span>{tag}</span>;
-        })}
+        <div className="project-tags-container">
+          {projects[props.currentId].projectTags.map((tag) => {
+            return <span>{tag}</span>;
+          })}
+        </div>
+        <div className="project-link-container">
+          <a
+            href={projects[props.currentId].projectLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Project Repo
+          </a>
+        </div>
       </div>
     </div>
   );

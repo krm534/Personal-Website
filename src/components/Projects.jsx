@@ -4,16 +4,16 @@ import { projects } from "../utils/Constants";
 import ProjectsDetail from "./ProjectsDetail";
 
 const Projects = () => {
-  const [projectDetail, setProjectDetail] = useState(0);
+  const [currentProjectId, setCurrentProjectId] = useState(0);
   const [projectDetailShowing, setProjectDetailShowing] = useState(false);
 
   const handleClick = (projectId) => {
     document.body.style.overflowY = "hidden";
-    setProjectDetail(projectId);
+    setCurrentProjectId(projectId);
     setProjectDetailShowing(true);
   };
 
-  const setProjectDetailsShowing = (state) => {
+  const setProjectDetailsModal = (state) => {
     if (!state) {
       document.body.style.overflowY = "scroll";
     }
@@ -41,8 +41,8 @@ const Projects = () => {
       })}
       {projectDetailShowing && (
         <ProjectsDetail
-          currentId={projectDetail}
-          setShowing={setProjectDetailsShowing}
+          currentId={currentProjectId}
+          setShowing={setProjectDetailsModal}
         />
       )}
     </div>

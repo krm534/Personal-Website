@@ -42,6 +42,7 @@
 }
 
 .current-project > p {
+  line-height: 1.3;
   padding-right: 10%;
   padding-left: 10%;
   font-size: 16px;
@@ -49,14 +50,34 @@
   text-align: left;
 }
 
-.current-project > span {
+.project-tags-container {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.project-tags-container > span {
   display: inline-block;
   padding: 10px;
   margin: 0 auto;
-  margin-top: 25px;
   margin-right: 10px;
+  margin-bottom: 5px;
   border-radius: 15px;
   background-color: #afe1af;
+}
+
+.project-link-container {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.project-link-container > a {
+  background-color: #303030;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .exit-button-container {

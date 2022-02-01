@@ -33,13 +33,35 @@
 }
 
 .project-box > h3 {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .project-box > span {
   color: #fff;
+  width: 200px;
+  margin: 0 auto;
   margin-top: 20px;
-  display: inline-block;
+  display: block;
   padding: 10px;
   border-radius: 15px;
+}
+
+.project-box > button {
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #6f8faf;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .project-box {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    margin-bottom: 15px;
+  }
 }

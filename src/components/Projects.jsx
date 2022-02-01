@@ -1,29 +1,24 @@
+import { useState } from "react";
 import "../styles/Projects.css";
+import { projects } from "../utils/Constants";
+import ProjectsDetail from "./ProjectsDetail";
 
 const Projects = () => {
-  const projects = [
-    {
-      projectImage: "/images/project-images/bike-project.png",
-      projectImageAlt: "Bike project Android app",
-      projectName: "Bike?",
-      projectDescription: "Sample Description",
-      projectFinished: true,
-    },
-    {
-      projectImage: "/images/project-images/library-project.jpg",
-      projectImageAlt: "Library background",
-      projectName: "MSU Library Guides App",
-      projectDescription: "Sample Description",
-      projectFinished: true,
-    },
-    {
-      projectImage: "/images/project-images/chatroom-project.jpg",
-      projectImageAlt: "Person using personal computer",
-      projectName: "Chatroom",
-      projectDescription: "Sample Description",
-      projectFinished: false,
-    },
-  ];
+  const [currentProjectId, setCurrentProjectId] = useState(0);
+  const [projectDetailShowing, setProjectDetailShowing] = useState(false);
+
+  const handleButtonClick = (projectId) => {
+    document.body.style.overflowY = "hidden";
+    setCurrentProjectId(projectId);
+    setProjectDetailShowing(true);
+  };
+
+  const setProjectDetailsModal = (state) => {
+    if (!state) {
+      document.body.style.overflowY = "scroll";
+    }
+    setProjectDetailShowing(state);
+  };
 
   return (
     <div id="projects" className="projects-container">
@@ -38,9 +33,18 @@ const Projects = () => {
             ) : (
               <span style={{ backgroundColor: "red" }}>In Progress</span>
             )}
+            <button onClick={() => handleButtonClick(project.projectId)}>
+              READ MORE
+            </button>
           </div>
         );
       })}
+      {projectDetailShowing && (
+        <ProjectsDetail
+          currentId={currentProjectId}
+          setDialogShowing={setProjectDetailsModal}
+        />
+      )}
     </div>
   );
 };

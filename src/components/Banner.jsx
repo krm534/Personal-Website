@@ -10,8 +10,8 @@ function Banner() {
       <div className="background-wrapper">
         <div className="background-cover" />
         <div className="banner-details">
-          <h3>Kaleb Meeks</h3>
-          <h6>Software Engineer</h6>
+          <h1>Kaleb Meeks</h1>
+          <h2>Software Engineer</h2>
         </div>
         <div className="scroll-button-container">
           <Link

@@ -27,11 +27,12 @@
   transform: translate(-50%, -50%);
 }
 
-.banner-details > h3 {
+.banner-details > h1 {
   font-size: 90px;
 }
 
-.banner-details > h6 {
+.banner-details > h2 {
+  margin-top: 20px;
   font-size: 30px;
 }
 

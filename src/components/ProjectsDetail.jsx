@@ -1,8 +1,8 @@
 import React from 'react';
 import { projects } from '../utils/Constants';
-import '../styles/ProjectsDetails.css';
+import '../styles/ProjectDetails.css';
 
-function ProjectsDetail(props) {
+function ProjectDetails(props) {
   const { setDialogShowing, currentId } = props;
 
   return (
@@ -49,4 +49,4 @@ function ProjectsDetail(props) {
   );
 }
 
-export default ProjectsDetail;
+export default ProjectDetails;

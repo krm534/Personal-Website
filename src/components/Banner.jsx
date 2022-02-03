@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Navbar from './Navbar';
-import '../styles/Header.css';
+import '../styles/Banner.css';
 
-function Header() {
+function Banner() {
   return (
-    <div id="home" className="header-container">
+    <div id="home" className="banner-container">
       <Navbar />
       <div className="background-wrapper">
         <div className="background-cover" />
-        <div className="header-details">
+        <div className="banner-details">
           <h3>Kaleb Meeks</h3>
           <h6>Software Engineer</h6>
         </div>
@@ -21,7 +21,7 @@ function Header() {
             spy
             smooth
           >
-            <i className="fa fa-angle-down" />
+            <i className="fa fa-angle-down" aria-hidden="true" />
           </Link>
         </div>
         <img src="/images/background.jpg" alt="Corporate office space" />
@@ -30,4 +30,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Banner;

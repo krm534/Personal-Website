@@ -8,12 +8,6 @@
   color: #fff;
 }
 
-.contact-container > h3 {
-  font-size: 36px;
-  color: #fff;
-  margin-bottom: 50px;
-}
-
 .contact-row-container {
   display: block;
   width: 500px;
@@ -56,7 +50,7 @@
 }
 
 .linkedin-container > a:hover {
-  color: #808080;
+  color: #a3a3a3;
 }
 
 @media screen and (max-width: 600px) {

@@ -11,7 +11,7 @@ function About() {
       <div className="about-resume-container">
         <a href="/kaleb-resume.pdf" download>
           <p>Resume</p>
-          <i className="fa fa-download" />
+          <i className="fa fa-download" aria-hidden="true" />
         </a>
       </div>
     </div>

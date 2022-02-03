@@ -4,8 +4,8 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   return (
-    <div className="nav-container">
-      <ul className="nav-list">
+    <div className="navbar-container">
+      <ul className="navbar-list">
         <Link className="navbar-link" to="home" spy smooth>
           <li>Home</li>
         </Link>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Projects.css';
 import { projects } from '../utils/Constants';
-import ProjectsDetail from './ProjectsDetail';
+import ProjectDetails from './ProjectsDetail';
 
 function Projects() {
   const [currentProjectId, setCurrentProjectId] = useState(0);
@@ -26,7 +26,7 @@ function Projects() {
       {projects.map((project) => (
         <div className="project-box">
           <img src={project.projectImage} alt={project.projectImageAlt} />
-          <h3>{project.projectName}</h3>
+          <h4>{project.projectName}</h4>
           {project.projectFinished ? (
             <span style={{ backgroundColor: 'green' }}>Finished</span>
           ) : (
@@ -38,7 +38,7 @@ function Projects() {
         </div>
       ))}
       {projectDetailShowing && (
-        <ProjectsDetail
+        <ProjectDetails
           currentId={currentProjectId}
           setDialogShowing={setProjectDetailsModal}
         />

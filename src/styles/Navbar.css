@@ -1,6 +1,4 @@
-.nav-container {
-  margin: 0;
-  padding: 0;
+.navbar-container {
   width: 100%;
   display: block;
   height: auto;
@@ -10,7 +8,7 @@
   background-color: #303030;
 }
 
-.nav-list {
+.navbar-list {
   justify-content: center;
   display: flex;
 }
@@ -21,16 +19,16 @@
 }
 
 .navbar-link > li:hover {
-  background-color: #444444;
+  background-color: #3a3a3a;
 }
 
-li > a {
+.navbar-link > li > a {
   color: #fff;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
-  .nav-list {
+  .navbar-list {
     display: none;
   }
 }

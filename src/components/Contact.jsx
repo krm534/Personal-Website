@@ -1,11 +1,16 @@
-import "../styles/Contact.css";
+import React from 'react';
+import '../styles/Contact.css';
 
-const Contact = () => {
+function Contact() {
   return (
     <div id="contact" className="contact-container">
       <h3>Contact</h3>
-      <ul>
-        <li>
+      <div className="contact-row-container">
+        <div className="email-container">
+          <i className="fa fa-envelope" />
+          <p>krmeeks15@gmail.com</p>
+        </div>
+        <div className="linkedin-container">
           <img
             src="/images/contact-images/linkedin-logo.png"
             alt="Linkedin company logo"
@@ -17,23 +22,10 @@ const Contact = () => {
           >
             LinkedIn Profile
           </a>
-        </li>
-        <li>
-          <img
-            src="/images/contact-images/github-logo.png"
-            alt="Github company logo"
-          />
-          <a
-            href="https://github.com/krm534"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Profile
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default Contact;

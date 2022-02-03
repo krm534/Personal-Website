@@ -3,16 +3,9 @@
   padding-bottom: 100px;
   width: 100%;
   height: auto;
-  color: #000;
-  background-color: #6f8faf;
-  text-align: center;
-  display: block;
-}
-
-.projects-container > h3 {
   color: #fff;
-  font-size: 24px;
-  margin-bottom: 30px;
+  background-color: #6f8faf;
+  display: block;
 }
 
 .project-box {
@@ -22,7 +15,7 @@
   border: 2px solid #000;
   margin-right: 15px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: #fff;
   padding-bottom: 10px;
 }
 
@@ -32,12 +25,13 @@
   height: 300px;
 }
 
-.project-box > h3 {
+.project-box > h4 {
+  font-size: 24px;
   margin-top: 22px;
+  color: #000;
 }
 
 .project-box > span {
-  color: #fff;
   width: 200px;
   margin: 0 auto;
   margin-top: 20px;
@@ -47,14 +41,22 @@
 }
 
 .project-box > button {
+  display: block;
   padding: 10px;
+  margin: 0 auto;
   margin-top: 20px;
   cursor: pointer;
   font-size: 14px;
   background-color: #6f8faf;
+  color: #fff;
   border: none;
   border-radius: 10px;
-  color: #fff;
+  transition: 0.3s;
+}
+
+.project-box > button:hover {
+  background-color: #587b9f;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {

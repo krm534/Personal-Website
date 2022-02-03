@@ -7,7 +7,7 @@ function Contact() {
       <h3>Contact</h3>
       <div className="contact-row-container">
         <div className="email-container">
-          <i className="fa fa-envelope" aria-hidden="true" />
+          <i className="fa fa-envelope" />
           <p>krmeeks15@gmail.com</p>
         </div>
         <div className="linkedin-container">

@@ -1,12 +1,13 @@
-import "../styles/Contact.css";
+import React from 'react';
+import '../styles/Contact.css';
 
-const Contact = () => {
+function Contact() {
   return (
     <div id="contact" className="contact-container">
       <h3>Contact</h3>
       <div className="contact-row-container">
         <div className="email-container">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <i className="fa fa-envelope" aria-hidden="true" />
           <p>krmeeks15@gmail.com</p>
         </div>
         <div className="linkedin-container">
@@ -25,6 +26,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Contact;

@@ -1,34 +1,43 @@
-import { projects } from "../utils/Constants";
-import "../styles/ProjectsDetails.css";
+import React from 'react';
+import { projects } from '../utils/Constants';
+import '../styles/ProjectsDetails.css';
 
-const ProjectsDetail = (props) => {
+function ProjectsDetail(props) {
+  const { setDialogShowing, currentId } = props;
+
   return (
     <div className="project-details-container">
       <div
         className="project-details-background"
-        onClick={() => props.setDialogShowing(false)}
-      ></div>
+        onClick={() => setDialogShowing(false)}
+        onKeyPress={() => setDialogShowing(false)}
+        role="button"
+        aria-label="Dialog box's background can be used to close the modal"
+        tabIndex={0}
+      />
       <div className="current-project">
         <div className="exit-button-container">
           <i
-            class="fa fa-close"
-            onClick={() => props.setDialogShowing(false)}
-          ></i>
+            className="fa fa-close"
+            onClick={() => setDialogShowing(false)}
+            onKeyPress={() => setDialogShowing(false)}
+            role="button"
+            aria-label="Dialog box's exit button in the right corner can be used to close the modal"
+            tabIndex={0}
+          />
         </div>
         <img
-          src={projects[props.currentId].projectImage}
-          alt={projects[props.currentId].projectImageAlt}
+          src={projects[currentId].projectImage}
+          alt={projects[currentId].projectImageAlt}
         />
-        <h4>{projects[props.currentId].projectName}</h4>
-        <p>{projects[props.currentId].projectDescription}</p>
+        <h4>{projects[currentId].projectName}</h4>
+        <p>{projects[currentId].projectDescription}</p>
         <div className="project-tags-container">
-          {projects[props.currentId].projectTags.map((tag) => {
-            return <span>{tag}</span>;
-          })}
+          {projects[currentId].projectTags.map((tag) => <span>{tag}</span>)}
         </div>
         <div className="project-link-container">
           <a
-            href={projects[props.currentId].projectLink}
+            href={projects[currentId].projectLink}
             target="_blank"
             rel="noreferrer"
           >
@@ -38,6 +47,6 @@ const ProjectsDetail = (props) => {
       </div>
     </div>
   );
-};
+}
 
 export default ProjectsDetail;

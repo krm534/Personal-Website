@@ -1,26 +1,26 @@
-import React from "react";
-import "../styles/Navbar.css";
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
+import '../styles/Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <div className="nav-container">
       <ul className="nav-list">
-        <Link className="navbar-link" to="home" spy={true} smooth={true}>
+        <Link className="navbar-link" to="home" spy smooth>
           <li>Home</li>
         </Link>
-        <Link className="navbar-link" to="about" spy={true} smooth={true}>
+        <Link className="navbar-link" to="about" spy smooth>
           <li>About</li>
         </Link>
-        <Link className="navbar-link" to="projects" spy={true} smooth={true}>
+        <Link className="navbar-link" to="projects" spy smooth>
           <li>Projects</li>
         </Link>
-        <Link className="navbar-link" to="contact" spy={true} smooth={true}>
+        <Link className="navbar-link" to="contact" spy smooth>
           <li>Contact</li>
         </Link>
       </ul>
     </div>
   );
-};
+}
 
 export default Navbar;

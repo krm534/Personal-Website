@@ -1,13 +1,14 @@
-import Navbar from "./Navbar";
-import "../styles/Header.css";
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
+import Navbar from './Navbar';
+import '../styles/Header.css';
 
-const Header = () => {
+function Header() {
   return (
     <div id="home" className="header-container">
       <Navbar />
       <div className="background-wrapper">
-        <div className="background-cover"></div>
+        <div className="background-cover" />
         <div className="header-details">
           <h3>Kaleb Meeks</h3>
           <h6>Software Engineer</h6>
@@ -17,16 +18,16 @@ const Header = () => {
             className="link"
             activeClass="active"
             to="about"
-            spy={true}
-            smooth={true}
+            spy
+            smooth
           >
-            <i class="fa fa-angle-down"></i>
+            <i className="fa fa-angle-down" />
           </Link>
         </div>
         <img src="/images/background.jpg" alt="Corporate office space" />
       </div>
     </div>
   );
-};
+}
 
 export default Header;

@@ -10,7 +10,6 @@
 .project-details-background {
   position: absolute;
   top: 0;
-  margin: 0;
   background-color: #000;
   width: 100%;
   height: 100%;
@@ -25,7 +24,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding-bottom: 20px;
 }
@@ -57,13 +55,14 @@
 }
 
 .project-tags-container > span {
+  color: #fff;
   display: inline-block;
   padding: 10px;
   margin: 0 auto;
   margin-right: 10px;
   margin-bottom: 5px;
   border-radius: 15px;
-  background-color: #afe1af;
+  background-color: #379437;
 }
 
 .project-link-container {
@@ -73,11 +72,18 @@
 }
 
 .project-link-container > a {
+  display: inline-block;
   background-color: #303030;
   padding: 10px;
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-link-container > a:hover {
+  background-color: #3a3a3a;
+  transition: 0.3s;
 }
 
 .exit-button-container {
@@ -91,9 +97,15 @@
 
 .exit-button-container > i {
   padding: 20px;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
-  color: #aa4a44;
+  color: #c87a75;
+  transition: 0.3s;
+}
+
+.exit-button-container > i:hover {
+  color: #ab4a44;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 600px) {

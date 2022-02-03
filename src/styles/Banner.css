@@ -1,4 +1,4 @@
-.header-container {
+.banner-container {
   width: 100%;
   height: 100vh;
   display: block;
@@ -18,7 +18,7 @@
   opacity: 0.8;
 }
 
-.header-details {
+.banner-details {
   position: absolute;
   width: auto;
   height: auto;
@@ -27,15 +27,12 @@
   transform: translate(-50%, -50%);
 }
 
-.header-details > * {
-  text-align: center;
-}
-
-.header-details > h3 {
+.banner-details > h1 {
   font-size: 90px;
 }
 
-.header-details > h6 {
+.banner-details > h2 {
+  margin-top: 20px;
   font-size: 30px;
 }
 
@@ -51,6 +48,12 @@
   font-size: 32px;
   cursor: pointer;
   padding: 10px;
+  transition: 0.3s;
+}
+
+.fa-angle-down:hover {
+  color: #a3a3a3;
+  transition: 0.3s;
 }
 
 .background-wrapper > img {

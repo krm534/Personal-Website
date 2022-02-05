@@ -1,0 +1,36 @@
+.navbar-container {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.desktop-navbar-container {
+  background-color: #303030;
+}
+
+.navbar-list {
+  justify-content: center;
+  display: flex;
+}
+
+.navbar-link > li {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.navbar-link > li:hover {
+  background-color: #3a3a3a;
+}
+
+.navbar-link > li > a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.active {
+  background-color: #3a3a3a;
+}

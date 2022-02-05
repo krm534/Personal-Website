@@ -6,11 +6,11 @@ function MobileNavbar() {
 
   return (
     <div className="mobile-navbar-container">
-      <div className="navbar-hamburger-button-container" style={{ display: dialogBoxShowing ? 'none' : 'block' }}>
+      <div className="mobile-navbar-hamburger-button-container" style={{ display: dialogBoxShowing ? 'none' : 'block' }}>
         <i className="fa fa-bars" aria-hidden="true" onClick={() => setDialogBoxShowing(true)} role="button" />
       </div>
       <div className="mobile-navbar-content-container" style={{ display: dialogBoxShowing ? 'block' : 'none' }}>
-        <div className="navbar-exit-button-container">
+        <div className="mobile-navbar-exit-button-container">
           <i className="fa fa-close" aria-hidden="true" onClick={() => setDialogBoxShowing(false)} />
         </div>
         <ul className="mobile-navbar-list">

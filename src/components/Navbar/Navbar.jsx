@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/DesktopNavbar.css';
-import '../styles/MobileNavbar.css';
+import '../../styles/DesktopNavbar.css';
+import '../../styles/MobileNavbar.css';
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
 

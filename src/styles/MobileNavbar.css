@@ -16,7 +16,7 @@
   text-align: right;
 }
 
-.navbar-hamburger-button-container {
+.mobile-navbar-hamburger-button-container {
   text-align: right;
   padding: 20px;
   font-size: 28px;
@@ -24,12 +24,12 @@
   display: none;
 }
 
-.navbar-hamburger-button-container > i {
+.mobile-navbar-hamburger-button-container > i {
   padding: 10px;
   cursor: pointer;
 }
 
-.navbar-exit-button-container {
+.mobile-navbar-exit-button-container {
   position: relative;
   top: 0px;
   width: 100%;
@@ -37,7 +37,7 @@
   text-align: right;
 }
 
-.navbar-exit-button-container > i {
+.mobile-navbar-exit-button-container > i {
   padding: 20px;
   font-size: 28px;
   cursor: pointer;

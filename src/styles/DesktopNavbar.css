@@ -5,27 +5,28 @@
   position: fixed;
   top: 0;
   z-index: 999;
+  color: #fff;
 }
 
 .desktop-navbar-container {
   background-color: #303030;
 }
 
-.navbar-list {
+.desktop-navbar-list {
   justify-content: center;
   display: flex;
 }
 
-.navbar-link > li {
+.desktop-navbar-link > li {
   padding: 20px;
   cursor: pointer;
 }
 
-.navbar-link > li:hover {
+.desktop-navbar-link > li:hover {
   background-color: #3a3a3a;
 }
 
-.navbar-link > li > a {
+.desktop-navbar-link > li > a {
   display: block;
   color: #fff;
   text-transform: uppercase;

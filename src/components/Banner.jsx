@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import Navbar from './Navbar';
 import '../styles/Banner.css';
 
 function Banner() {
   return (
     <div id="home" className="banner-container">
-      <Navbar />
       <div className="background-wrapper">
         <div className="background-cover" />
         <div className="banner-details">

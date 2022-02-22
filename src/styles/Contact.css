@@ -51,6 +51,7 @@
 
 .linkedin-container > a:hover {
   color: #a3a3a3;
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 600px) {

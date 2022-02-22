@@ -1,0 +1,121 @@
+.navbar-container {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+}
+
+.navbar-content-container {
+  display: block;
+  background-color: #303030;
+  border-left: 3px solid #2b2b2b;
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+}
+
+.navbar-hamburger-button-container {
+  display: block;
+  text-align: right;
+}
+
+.navbar-hamburger-button-container > .fa-bars {
+  cursor: pointer;
+  font-size: 24px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.navbar-exit-button-container {
+  display: block;
+  text-align: right;
+}
+
+.navbar-exit-button-container > .fa-close {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.navbar-exit-button-container > .fa-close:hover {
+  color: #a3a3a3;
+  transition: 0.3s;
+}
+
+.navbar-content-container > ul {
+  justify-content: center;
+  display: block;
+  margin-top: 30px;
+}
+
+.navbar-link > li {
+  padding: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar-link > li:hover {
+  background-color: #3a3a3a;
+}
+
+.navbar-link > li > a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.active > li {
+  background-color: #3a3a3a;
+}
+
+.navbar-contact-section {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.navbar-contact-section > hr {
+  height: 2px;
+  border: none;
+  background-color: #a3a3a3;
+}
+
+.navbar-contact-image-container {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.navbar-contact-image-container > div {
+  margin: 20px 0 15px 0;
+  display: inline-block;
+  width: 50%;
+  height: auto;
+}
+
+.navbar-contact-image-container > div > a {
+  display: inline-block;
+}
+
+.navbar-contact-image-container > div > a > img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-content-container {
+    width: 100%;
+  }
+}

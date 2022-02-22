@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Contact.css';
+import { LINKEDIN_LINK } from '../utils/Constants';
 
 function Contact() {
   return (
@@ -16,7 +17,7 @@ function Contact() {
             alt="Linkedin company logo"
           />
           <a
-            href="https://www.linkedin.com/in/kaleb-meeks-060082188/"
+            href={LINKEDIN_LINK}
             target="_blank"
             rel="noopener noreferrer"
           >

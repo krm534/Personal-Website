@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import '../styles/Navbar.css';
+import { GITHUB_LINK, LINKEDIN_LINK } from '../utils/Constants';
 
 function Navbar() {
   const [dialogBoxShowing, setDialogBoxShowing] = useState(false);
@@ -33,7 +34,7 @@ function Navbar() {
           <div className="navbar-contact-image-container">
             <div>
               <a
-                href="https://www.linkedin.com/in/kaleb-meeks-060082188/"
+                href={LINKEDIN_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +43,7 @@ function Navbar() {
             </div>
             <div>
               <a
-                href="https://github.com/krm534"
+                href={GITHUB_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -37,3 +37,42 @@ export const projects = [
     projectLink: 'https://github.com/krm534/Chatroom-Client',
   },
 ];
+
+export const experiences = [
+  {
+    experienceId: 0,
+    experienceName: 'Howard Industries',
+    experienceStartDate: 'May 2018',
+    experienceEndDate: 'August 2018',
+    experienceRole: 'Computer Programmer Intern',
+    experienceLogo: '/images/experience-images/howard-industries-experience.jpg',
+    experienceLogoAlt: 'Howard Industries job logo where I was a Computer Programmer Intern',
+    experienceDescription: 'Documented all of the networking boxes from each plant location\'s plant floor. The networking box information was composed of box image snapshots and general information regarding the quality of the box. Organized all of the documented networking box information and built a web application to display the information efficiently. Also, designed and built another web application to track inventory for the IT department.',
+    experienceCompanyLink: 'https://www.howardcomputers.com/index.cfm',
+    experienceTags: ['ASP.NET', 'MVC', 'C#', 'MySQL'],
+  },
+  {
+    experienceId: 1,
+    experienceName: 'Babel Street',
+    experienceStartDate: 'August 2019',
+    experienceEndDate: 'December 2019',
+    experienceRole: 'Software Developer Intern',
+    experienceLogo: '/images/experience-images/babel-street-experience.jpg',
+    experienceLogoAlt: 'Babel Street job logo where I was a Software Developer Intern',
+    experienceDescription: 'Wrote numerous unit tests to reinforce the fundamental components and helped contribute to making the data aggregation services as rugged as possible.',
+    experienceCompanyLink: 'https://www.babelstreet.com/',
+    experienceTags: ['C#', 'NUnit', 'Elasticsearch', 'Kibana', 'Jira', 'Bitbucket'],
+  },
+  {
+    experienceId: 2,
+    experienceName: 'Kopis Mobile',
+    experienceStartDate: 'May 2020',
+    experienceEndDate: 'Present',
+    experienceRole: 'Software Engineer',
+    experienceLogo: '/images/experience-images/kopis-mobile-experience.jpeg',
+    experienceLogoAlt: 'Kopis Mobile job logo where I am a Software Engineer',
+    experienceDescription: 'Designed, developed, tested, and maintained Android / Java applications for the defense sector. Built network-intense Android / Java applications that interfaced with external devices and adapters to eﬃciently transmit and receive data. Also, conﬁgured automated testing and deployment pipelines using Gitlab for a more autonomous development lifecycle. Participated in a fast-paced, agile development process where developers are expected to learn and adapt quickly.',
+    experienceCompanyLink: 'https://kopismobile.com/',
+    experienceTags: ['Java', 'Android', 'GitLab', 'ATAK', 'Docker', 'AWS'],
+  },
+];

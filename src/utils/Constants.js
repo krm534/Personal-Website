@@ -46,7 +46,7 @@ export const experiences = [
     experienceEndDate: 'August 2018',
     experienceRole: 'Computer Programmer Intern',
     experienceLogo: '/images/experience-images/howard-industries-experience.jpg',
-    experienceLogoAlt: 'Howard Industries job logo where I was a Software Engineer',
+    experienceLogoAlt: 'Howard Industries job logo where I was a Computer Programmer Intern',
     experienceDescription: 'Documented all of the networking boxes from each plant location\'s plant floor. The networking box information was composed of box image snapshots and general information regarding the quality of the box. Organized all of the documented networking box information and built a web application to display the information efficiently. Also, designed and built another web application to track inventory for the IT department.',
     experienceCompanyLink: 'https://www.howardcomputers.com/index.cfm',
     experienceTags: ['ASP.NET', 'MVC', 'C#', 'MySQL'],

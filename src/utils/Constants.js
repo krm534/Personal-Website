@@ -67,7 +67,7 @@ export const experiences = [
     experienceId: 2,
     experienceName: 'Kopis Mobile',
     experienceStartDate: 'May 2020',
-    experienceEndDate: 'February 2022',
+    experienceEndDate: 'Present',
     experienceRole: 'Software Engineer',
     experienceLogo: '/images/experience-images/kopis-mobile-experience.jpeg',
     experienceLogoAlt: 'Kopis Mobile job logo where I am a Software Engineer',

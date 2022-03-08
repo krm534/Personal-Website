@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import '../styles/Projects.css';
 import { projects } from '../utils/Constants';
-import ProjectDetails from './ProjectsDetail';
+import Modal from './Modal';
 
 function Projects() {
   const [currentProjectId, setCurrentProjectId] = useState(0);
-  const [projectDetailShowing, setProjectDetailShowing] = useState(false);
+  const [modalShowing, setModalShowing] = useState(false);
 
   const handleButtonClick = (projectId) => {
     document.body.style.overflowY = 'hidden';
     setCurrentProjectId(projectId);
-    setProjectDetailShowing(true);
+    setModalShowing(true);
   };
 
   const setProjectDetailsModal = (state) => {
     if (!state) {
       document.body.style.overflowY = 'scroll';
     }
-    setProjectDetailShowing(state);
+    setModalShowing(state);
   };
 
   return (
@@ -37,10 +37,11 @@ function Projects() {
           </button>
         </div>
       ))}
-      {projectDetailShowing && (
-        <ProjectDetails
+      {modalShowing && (
+        <Modal
           currentId={currentProjectId}
           setDialogShowing={setProjectDetailsModal}
+          isProject
         />
       )}
     </div>

@@ -38,7 +38,9 @@ function Experience() {
                   <li>
                     <i className="fa fa-caret-right" />
                     {experience.experienceStartDate}
+                    {' '}
                     -
+                    {' '}
                     {experience.experienceEndDate}
                   </li>
                 </ul>

@@ -27,8 +27,13 @@
   transform: translate(-50%, -50%);
 }
 
-.banner-details > h1 {
+.banner-details > :nth-child(1) {
   font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.banner-details > :nth-child(2) {
+  font-size: 40px;
 }
 
 .banner-details > h2 {

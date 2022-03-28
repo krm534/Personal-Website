@@ -59,8 +59,8 @@ function Modal(props) {
           >
             {isProject
               ? 'Project '
-              : 'Company '}
-            Link
+              : `${experiences[currentId].experienceName} `}
+            Website
           </a>
         </div>
       </div>

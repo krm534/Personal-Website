@@ -6,10 +6,10 @@ function About() {
   return (
     <div id="about" className="about-container">
       <h3>About</h3>
-      <img src="/images/avatar.jpg" alt="Avatar logo" />
+      <img src="/images/kaleb-meeks-portrait.jpg" alt="Kaleb Meeks's portrait" />
       <p>{ABOUT_ME_PARAGRAPH}</p>
       <div className="about-resume-container">
-        <a href="/kaleb-resume.pdf" download>
+        <a href="/kaleb-meeks-resume.pdf" download>
           <p>Resume</p>
           <i className="fa fa-download" aria-hidden="true" />
         </a>

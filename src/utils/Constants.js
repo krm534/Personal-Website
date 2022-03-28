@@ -5,7 +5,7 @@ export const GITHUB_LINK = 'https://github.com/krm534';
 export const projects = [
   {
     projectId: 0,
-    projectImage: '/images/project-images/bike-project.jpg',
+    projectImage: '/images/project-images/bike-project-background.jpg',
     projectImageAlt: 'Person biking in snowy environment',
     projectName: 'Bike?',
     projectDescription:
@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     projectId: 1,
-    projectImage: '/images/project-images/library-project.jpg',
+    projectImage: '/images/project-images/library-project-background.jpg',
     projectImageAlt: 'Books on shelves in a library environment',
     projectName: 'MSU Library Guides',
     projectDescription:
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     projectId: 2,
-    projectImage: '/images/project-images/chatroom-project.jpg',
+    projectImage: '/images/project-images/chatroom-project-background.jpg',
     projectImageAlt: 'Person using personal computer',
     projectName: 'Chatroom',
     projectDescription:
@@ -45,7 +45,7 @@ export const experiences = [
     experienceStartDate: 'May 2018',
     experienceEndDate: 'August 2018',
     experienceRole: 'Computer Programmer Intern',
-    experienceLogo: '/images/experience-images/howard-industries-experience.jpg',
+    experienceLogo: '/images/experience-images/howard-industries-logo.jpg',
     experienceLogoAlt: 'Howard Industries job logo',
     experienceDescription: 'Documented all of the networking boxes from each plant location\'s plant floor. The networking box information was composed of box image snapshots and general information regarding the quality of the box. Organized all of the documented networking box information and built a web application to display the information efficiently. Also, designed and built another web application to track inventory for the IT department.',
     experienceCompanyLink: 'https://www.howardcomputers.com/index.cfm',
@@ -57,7 +57,7 @@ export const experiences = [
     experienceStartDate: 'August 2019',
     experienceEndDate: 'December 2019',
     experienceRole: 'Software Developer Intern',
-    experienceLogo: '/images/experience-images/babel-street-experience.jpg',
+    experienceLogo: '/images/experience-images/babel-street-logo.jpg',
     experienceLogoAlt: 'Babel Street job logo',
     experienceDescription: 'Wrote numerous unit tests to reinforce the fundamental components and helped contribute to making the data aggregation services as rugged as possible.',
     experienceCompanyLink: 'https://www.babelstreet.com/',
@@ -69,7 +69,7 @@ export const experiences = [
     experienceStartDate: 'May 2020',
     experienceEndDate: 'Present',
     experienceRole: 'Software Engineer',
-    experienceLogo: '/images/experience-images/kopis-mobile-experience.jpeg',
+    experienceLogo: '/images/experience-images/kopis-mobile-logo.jpeg',
     experienceLogoAlt: 'Kopis Mobile job logo',
     experienceDescription: 'Designed, developed, tested, and maintained Android / Java applications for the defense sector. Built network-intense Android / Java applications that interfaced with external devices and adapters to eﬃciently transmit and receive data. Also, conﬁgured automated testing and deployment pipelines using Gitlab for a more autonomous development lifecycle. Participated in a fast-paced, agile development process where developers are expected to learn and adapt quickly.',
     experienceCompanyLink: 'https://kopismobile.com/',

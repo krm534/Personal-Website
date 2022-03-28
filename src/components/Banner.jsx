@@ -22,7 +22,7 @@ function Banner() {
             <i className="fa fa-angle-down" aria-hidden="true" />
           </Link>
         </div>
-        <img src="/images/background.jpg" alt="Corporate office space" />
+        <img src="/images/banner-background.jpg" alt="Working environment used for banner section's background" />
       </div>
     </div>
   );

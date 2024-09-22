@@ -1,4 +1,4 @@
-export const ABOUT_ME_PARAGRAPH = "Hello! My name is Kaleb Meeks, and I enjoy engineering tech products that facilitate people's lives. My interest in computer science ultimately started with website development, but I've come to enjoy and primarily work in application development using Android / iOS systems. I'm an extremely motivated software developer with previous professional experience focused on developing high-quality and maintainable software within reasonable timeframes. I'm constantly honing my software development skills and keeping up with contemporary software development technologies. I look forward to applying my knowledge and experience in software development to solve challenging problems.";
+export const ABOUT_ME_PARAGRAPH = "Hello! My name is Kaleb Meeks, and I enjoy engineering tech products that facilitate people's lives. My interest in computer science ultimately started with website development, but I've come to enjoy and primarily work in application development using Java / Android / iOS systems. I'm an extremely motivated software developer with previous professional experience focused on developing high-quality and maintainable software within reasonable timeframes. I'm constantly honing my software development skills and keeping up with contemporary software development technologies. I look forward to applying my knowledge and experience in software development to solve challenging problems.";
 export const LINKEDIN_LINK = 'https://www.linkedin.com/in/kaleb-meeks-060082188/';
 export const GITHUB_LINK = 'https://github.com/krm534';
 
@@ -31,9 +31,9 @@ export const projects = [
     projectImageAlt: 'Person using personal computer',
     projectName: 'Chatroom',
     projectDescription:
-      'Chatroom server and client applications for creating a chatroom environment. The chatroom server application can be installed on a personal server or a remote server. The chatroom server application disseminates messages to all other clients connected to it. The chatroom client application is used to send messages to the central server. ',
-    projectFinished: false,
-    projectTags: ['Chatroom', 'Client', 'Server', 'Java', 'Gradle'],
+      'Chatroom server and client applications for creating a chatroom environment. The chatroom server application can be installed on a personal server or a remote server. The chatroom server application disseminates messages to all other clients connected to it. The chatroom client application is used to send messages or images to the central server. All messages between client and server are encrypted using an AES symmetric-key encryption sheme.',
+    projectFinished: true,
+    projectTags: ['Chatroom', 'Client', 'Server', 'Java', 'JavaFX', 'Gradle'],
     projectLink: 'https://github.com/krm534/Chatroom-Client',
   },
 ];
@@ -67,12 +67,24 @@ export const experiences = [
     experienceId: 2,
     experienceName: 'Kopis Mobile',
     experienceStartDate: 'May 2020',
-    experienceEndDate: 'Present',
+    experienceEndDate: 'January 2022',
     experienceRole: 'Software Engineer',
     experienceLogo: '/images/experience-images/kopis-mobile-logo.jpeg',
     experienceLogoAlt: 'Kopis Mobile job logo',
     experienceDescription: 'Designed, developed, tested, and maintained Android / Java applications for the defense sector. Built network-intense Android / Java applications that interfaced with external devices and adapters to eﬃciently transmit and receive data. Also, conﬁgured automated testing and deployment pipelines using Gitlab for a more autonomous development lifecycle. Participated in a fast-paced, agile development process where developers are expected to learn and adapt quickly.',
-    experienceCompanyLink: 'https://kopismobile.com/',
+    experienceCompanyLink: 'https://www.kopismobile.com/',
     experienceTags: ['Java', 'Android', 'GitLab', 'ATAK', 'Docker', 'AWS'],
+  },
+  {
+    experienceId: 3,
+    experienceName: 'Raytheon Technologies',
+    experienceStartDate: 'March 2022',
+    experienceEndDate: 'Present',
+    experienceRole: 'Software Engineer 2',
+    experienceLogo: '/images/experience-images/rtx-logo.jpg',
+    experienceLogoAlt: 'Raytheon Technologies job logo',
+    experienceDescription: 'Design, develop, test, and maintain Java applications for Fortune 500 defense company. Helped to design and create more efficient testing processes using Jenkins pipelines. Have become somewhat of a DevOps lead for my current team leveraging modern Kubernetes tools and security practices to design and deploy microservices. Have improved into a full-stack engineer servicing all aspects of software development lifecycle from design to deployment.',
+    experienceCompanyLink: 'https://www.rtx.com/',
+    experienceTags: ['Java', 'Atlassian stack', 'Docker', 'Kubernetes', 'Jenkins'],
   },
 ];

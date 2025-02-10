@@ -10,7 +10,6 @@ export const projects = [
     projectName: 'Bike?',
     projectDescription:
       'Android application that informs users whether it is a good or bad day to ride their bike based on their personalized weather specifications. Allows users to cycle through the upcoming 7 days to check if the weather for those days matches their preferred biking preferences.',
-    projectFinished: true,
     projectTags: ['Android', 'Biking', 'Weather', 'Java', 'Gradle', 'API'],
     projectLink: 'https://github.com/krm534/Biking-Android-App',
   },
@@ -21,7 +20,6 @@ export const projects = [
     projectName: 'MSU Library Guides',
     projectDescription:
       'Web application for listing research guides published by Mississippi State University (MSU). This application displays information about these MSU guides effectively and aesthetically to the user.',
-    projectFinished: true,
     projectTags: ['Website', 'Library', 'Guides', 'NodeJS', 'API'],
     projectLink: 'https://github.com/krm534/MSU-Library-Web-App',
   },
@@ -32,9 +30,18 @@ export const projects = [
     projectName: 'Chatroom',
     projectDescription:
       'Chatroom server and client applications for creating a chatroom environment. The chatroom server application can be installed on a personal server or a remote server. The chatroom server application disseminates messages to all other clients connected to it. The chatroom client application is used to send messages or images to the central server. All messages between client and server are encrypted using an AES symmetric-key encryption sheme.',
-    projectFinished: true,
     projectTags: ['Chatroom', 'Client', 'Server', 'Java', 'JavaFX', 'Gradle'],
     projectLink: 'https://github.com/krm534/Chatroom-Client',
+  },
+  {
+    projectId: 3,
+    projectImage: '/images/project-images/slackbot-project-background.jpg',
+    projectImageAlt: 'Animated Slack bot graphic',
+    projectName: 'Slack Change App Bot',
+    projectDescription:
+      'Slack ChatBot app for getting the fewest amount of change for a dollar input value. For example, entering 0.50 cents into the ChatBot would render 2 quarters since that is the fewest amount of change needed. This is currently a simple use for the SlackBot that could easily be updated for more practical uses.',
+    projectTags: ['Slack', 'ChatBot', 'Javascript', 'Ngrok'],
+    projectLink: 'https://github.com/krm534/Slack-Change-App-Bot',
   },
 ];
 

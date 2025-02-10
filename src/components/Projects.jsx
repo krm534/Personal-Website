@@ -27,11 +27,6 @@ function Projects() {
         <div className="project-box">
           <img src={project.projectImage} alt={project.projectImageAlt} />
           <h4>{project.projectName}</h4>
-          {project.projectFinished ? (
-            <span style={{ backgroundColor: 'green' }}>Finished</span>
-          ) : (
-            <span style={{ backgroundColor: 'red' }}>In Progress</span>
-          )}
           <button type="button" onClick={() => handleButtonClick(project.projectId)}>
             READ MORE
           </button>

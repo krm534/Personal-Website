@@ -46,8 +46,12 @@ function Modal(props) {
         </p>
         <div className="project-tags-container">
           {isProject
-            ? projects[currentId].projectTags.map((tag) => <span>{tag}</span>)
-            : experiences[currentId].experienceTags.map((tag) => <span>{tag}</span>)}
+            ? projects[currentId].projectTags.map((tag) => {
+              <span key={currentId}>{tag}</span>
+            })
+            : experiences[currentId].experienceTags.map((tag) => {
+              <span key={currentId}>{tag}</span>
+            })}
         </div>
         <div className="project-link-container">
           <a

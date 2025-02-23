@@ -10,38 +10,38 @@ export const projects = [
     projectName: 'Bike?',
     projectDescription:
       'Android application that informs users whether it is a good or bad day to ride their bike based on their personalized weather specifications. Allows users to cycle through the upcoming 7 days to check if the weather for those days matches their preferred biking preferences.',
-    projectTags: ['Android', 'Biking', 'Weather', 'Java', 'Gradle', 'API'],
+    projectTags: ['Android', 'Java', 'Gradle'],
     projectLink: 'https://github.com/krm534/Biking-Android-App',
   },
   {
     projectId: 1,
-    projectImage: '/images/project-images/library-project-background.jpg',
-    projectImageAlt: 'Books on shelves in a library environment',
-    projectName: 'MSU Library Guides',
-    projectDescription:
-      'Web application for listing research guides published by Mississippi State University (MSU). This application displays information about these MSU guides effectively and aesthetically to the user.',
-    projectTags: ['Website', 'Library', 'Guides', 'NodeJS', 'API'],
-    projectLink: 'https://github.com/krm534/MSU-Library-Web-App',
-  },
-  {
-    projectId: 2,
     projectImage: '/images/project-images/chatroom-project-background.jpg',
     projectImageAlt: 'Person using personal computer',
     projectName: 'Chatroom',
     projectDescription:
       'Chatroom server and client applications for creating a chatroom environment. The chatroom server application can be installed on a personal server or a remote server. The chatroom server application disseminates messages to all other clients connected to it. The chatroom client application is used to send messages or images to the central server. All messages between client and server are encrypted using an AES symmetric-key encryption sheme.',
-    projectTags: ['Chatroom', 'Client', 'Server', 'Java', 'JavaFX', 'Gradle'],
+    projectTags: ['Java', 'JavaFX', 'Gradle'],
     projectLink: 'https://github.com/krm534/Chatroom-Client',
   },
   {
-    projectId: 3,
+    projectId: 2,
     projectImage: '/images/project-images/slackbot-project-background.jpg',
     projectImageAlt: 'Animated Slack bot graphic',
     projectName: 'Slack Change App Bot',
     projectDescription:
       'Slack ChatBot app for getting the fewest amount of change for a dollar input value. For example, entering 0.50 cents into the ChatBot would render 2 quarters since that is the fewest amount of change needed. This is currently a simple use for the SlackBot that could easily be updated for more practical uses.',
-    projectTags: ['Slack', 'ChatBot', 'Javascript', 'Ngrok'],
+    projectTags: ['Javascript', 'NodeJS', 'NPM', 'TypeScript'],
     projectLink: 'https://github.com/krm534/Slack-Change-App-Bot',
+  },
+  {
+    projectId: 3,
+    projectImage: '/images/project-images/library-project-background.jpg',
+    projectImageAlt: 'Books on shelves in a library environment',
+    projectName: 'MSU Library Guides',
+    projectDescription:
+      'Web application for listing research guides published by Mississippi State University (MSU). This application displays information about these MSU guides effectively and aesthetically to the user.',
+    projectTags: ['Javascript', 'NodeJS', 'NPM', 'TypeScript'],
+    projectLink: 'https://github.com/krm534/MSU-Library-Web-App',
   },
 ];
 
@@ -68,7 +68,7 @@ export const experiences = [
     experienceLogoAlt: 'Babel Street job logo',
     experienceDescription: 'Wrote numerous unit tests to reinforce the fundamental components and helped contribute to making the data aggregation services as rugged as possible.',
     experienceCompanyLink: 'https://www.babelstreet.com/',
-    experienceTags: ['C#', 'NUnit', 'Elasticsearch', 'Kibana', 'Jira', 'Bitbucket'],
+    experienceTags: ['C#', 'NUnit', 'Elasticsearch', 'Kibana'],
   },
   {
     experienceId: 2,
@@ -80,7 +80,7 @@ export const experiences = [
     experienceLogoAlt: 'Kopis Mobile job logo',
     experienceDescription: 'Designed, developed, tested, and maintained Android / Java applications for the defense sector. Built network-intense Android / Java applications that interfaced with external devices and adapters to eﬃciently transmit and receive data. Also, conﬁgured automated testing and deployment pipelines using Gitlab for a more autonomous development lifecycle. Participated in a fast-paced, agile development process where developers are expected to learn and adapt quickly.',
     experienceCompanyLink: 'https://www.kopismobile.com/',
-    experienceTags: ['Java', 'Android', 'GitLab', 'ATAK', 'Docker', 'AWS'],
+    experienceTags: ['Java', 'Android', 'Docker', 'AWS'],
   },
   {
     experienceId: 3,
@@ -92,6 +92,6 @@ export const experiences = [
     experienceLogoAlt: 'Raytheon Technologies job logo',
     experienceDescription: 'Design, develop, test, and maintain Java applications for Fortune 500 defense company. Helped to design and create more efficient testing processes using Jenkins pipelines. Have become somewhat of a DevOps lead for my current team leveraging modern Kubernetes tools and security practices to design and deploy microservices. Have improved into a full-stack engineer servicing all aspects of software development lifecycle from design to deployment.',
     experienceCompanyLink: 'https://www.rtx.com/',
-    experienceTags: ['Java', 'Atlassian stack', 'Docker', 'Kubernetes', 'Jenkins'],
+    experienceTags: ['Java', 'Docker', 'Kubernetes', 'Jenkins', 'JFrog Artifactory', 'Gradle', 'Selenium'],
   },
 ];

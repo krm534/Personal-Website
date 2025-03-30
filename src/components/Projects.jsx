@@ -24,14 +24,9 @@ function Projects() {
     <div id="projects" className="projects-container">
       <h3>Projects</h3>
       {projects.map((project) => (
-        <div className="project-box">
+        <div className="project-box" key={project.projectId}>
           <img src={project.projectImage} alt={project.projectImageAlt} />
           <h4>{project.projectName}</h4>
-          {project.projectFinished ? (
-            <span style={{ backgroundColor: 'green' }}>Finished</span>
-          ) : (
-            <span style={{ backgroundColor: 'red' }}>In Progress</span>
-          )}
           <button type="button" onClick={() => handleButtonClick(project.projectId)}>
             READ MORE
           </button>

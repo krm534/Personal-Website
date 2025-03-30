@@ -1,4 +1,3 @@
 # Personal Website
 - My current personal website.
-- The live link is https://www.kalebmeeks.me/.
-
+- Website is live at https://www.kalebmeeks.me

@@ -10,7 +10,7 @@ function Modal(props) {
       <div
         className="project-details-background"
         onClick={() => setDialogShowing(false)}
-        onKeyPress={() => setDialogShowing(false)}
+        onKeyDown={() => setDialogShowing(false)}
         role="button"
         aria-label="Dialog box's background can be used to close the modal"
         tabIndex={0}
@@ -20,7 +20,7 @@ function Modal(props) {
           <i
             className="fa fa-close"
             onClick={() => setDialogShowing(false)}
-            onKeyPress={() => setDialogShowing(false)}
+            onKeyDown={() => setDialogShowing(false)}
             role="button"
             aria-label="Dialog box's exit button in the right corner can be used to close the modal"
             tabIndex={0}
@@ -46,8 +46,12 @@ function Modal(props) {
         </p>
         <div className="project-tags-container">
           {isProject
-            ? projects[currentId].projectTags.map((tag) => <span>{tag}</span>)
-            : experiences[currentId].experienceTags.map((tag) => <span>{tag}</span>)}
+            ? projects[currentId].projectTags.map((tag) => {
+              <span key={currentId}>{tag}</span>
+            })
+            : experiences[currentId].experienceTags.map((tag) => {
+              <span key={currentId}>{tag}</span>
+            })}
         </div>
         <div className="project-link-container">
           <a

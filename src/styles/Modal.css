@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .current-project {
@@ -27,18 +28,18 @@
   padding-bottom: 20px;
 }
 
-.current-project > img {
+.current-project>img {
   display: block;
   width: 100%;
   height: 300px;
 }
 
-.current-project > h4 {
+.current-project>h4 {
   margin-top: 20px;
   font-size: 24px;
 }
 
-.current-project > p {
+.current-project>p {
   line-height: 1.3;
   padding-right: 10%;
   padding-left: 10%;
@@ -53,7 +54,7 @@
   margin-top: 25px;
 }
 
-.project-tags-container > span {
+.project-tags-container>span {
   color: #fff;
   display: inline-block;
   padding: 10px;
@@ -70,7 +71,7 @@
   margin-top: 30px;
 }
 
-.project-link-container > a {
+.project-link-container>a {
   display: inline-block;
   background-color: #303030;
   padding: 10px;
@@ -80,7 +81,7 @@
   transition: 0.3s;
 }
 
-.project-link-container > a:hover {
+.project-link-container>a:hover {
   background-color: #3a3a3a;
   transition: 0.3s;
 }
@@ -94,15 +95,15 @@
   text-align: right;
 }
 
-.exit-button-container > i {
+.exit-button-container>i {
   padding: 20px;
   font-size: 28px;
   cursor: pointer;
-  color: #c87a75;
+  color: #A32C24;
   transition: 0.3s;
 }
 
-.exit-button-container > i:hover {
+.exit-button-container>i:hover {
   color: #ab4a44;
   transition: 0.3s;
 }

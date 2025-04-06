@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #40826d;
+  background-color: #2A6050;
   color: #fff;
 }
 
@@ -42,57 +42,57 @@
   left: 57%;
 }
 
-.experience-box > img {
+.experience-box>img {
   display: block;
   width: 100%;
   height: 200px;
   border-bottom: 2px solid #000;
 }
 
-.experience-box > h4 {
+.experience-box>h4 {
   font-size: 24px;
   margin-top: 22px;
   color: #000;
 }
 
-.experience-box > ul {
+.experience-box>ul {
   padding: 10px 0 10px 0;
   color: #000;
 }
 
-.experience-box > ul > li {
+.experience-box>ul>li {
   text-align: left;
   padding: 10px 0px 10px 25px;
   display: block;
 }
 
-.experience-box > ul > li > i {
+.experience-box>ul>li>i {
   margin-right: 10px;
 }
 
-.experience-box > button {
+.experience-box>button {
   display: block;
   padding: 10px;
   margin: 0 auto;
   cursor: pointer;
   font-size: 14px;
-  background-color: #40826d;
+  background-color: #2A6050;
   color: #fff;
   border: none;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-.experience-box > button:hover {
+.experience-box>button:hover {
   background-color: #397562;
   transition: 0.3s;
 }
 
-.responsibilities-list > ul {
+.responsibilities-list>ul {
   margin: 10px 0 0 20px;
 }
 
-.responsibilities-list > ul > li > i {
+.responsibilities-list>ul>li>i {
   margin-right: 10px;
 }
 

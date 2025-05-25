@@ -1,4 +1,5 @@
 export const ABOUT_ME_PARAGRAPH = "Hello! My name is Kaleb Meeks, and I enjoy engineering tech products that facilitate people's lives. My interest in computer science ultimately started with website development, but I've come to enjoy and primarily work in application development using Java / Android / iOS systems. I'm an extremely motivated software developer with previous professional experience focused on developing high-quality and maintainable software within reasonable timeframes. I'm constantly honing my software development skills and keeping up with contemporary software development technologies. I look forward to applying my knowledge and experience in software development to solve challenging problems.";
+export const ABOUT_ME_RESUME_URL = "https://drive.google.com/file/d/1QBqLIhL5B-NW9_xJcBFthluDwlqkbP3T/view?usp=drive_link";
 export const LINKEDIN_LINK = 'https://www.linkedin.com/in/kaleb-meeks-060082188/';
 export const GITHUB_LINK = 'https://github.com/krm534';
 

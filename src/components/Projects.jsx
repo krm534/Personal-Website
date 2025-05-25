@@ -22,11 +22,11 @@ function Projects() {
 
   return (
     <div id="projects" className="projects-container">
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       {projects.map((project) => (
         <div className="project-box" key={project.projectId}>
           <img src={project.projectImage} alt={project.projectImageAlt} />
-          <h4>{project.projectName}</h4>
+          <h3>{project.projectName}</h3>
           <button type="button" onClick={() => handleButtonClick(project.projectId)}>
             READ MORE
           </button>

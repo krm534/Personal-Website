@@ -5,7 +5,7 @@ import { LINKEDIN_LINK } from '../utils/Constants';
 function Contact() {
   return (
     <div id="contact" className="contact-container">
-      <h3>Contact</h3>
+      <h2>Contact</h2>
       <div className="contact-row-container">
         <div className="email-container">
           <i className="fa fa-envelope" />

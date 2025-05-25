@@ -5,7 +5,7 @@ import { ABOUT_ME_PARAGRAPH } from '../utils/Constants';
 function About() {
   return (
     <div id="about" className="about-container">
-      <h3>About</h3>
+      <h2>About</h2>
       <img src="/images/kaleb-meeks-portrait.JPG" alt="Kaleb Meeks's portrait" />
       <p>{ABOUT_ME_PARAGRAPH}</p>
       <div className="about-resume-container">

@@ -34,11 +34,11 @@ function Modal(props) {
             ? projects[currentId].projectImageAlt
             : experiences[currentId].experienceLogoAlt}
         />
-        <h4>
+        <h3>
           {isProject
             ? projects[currentId].projectName
             : experiences[currentId].experienceName}
-        </h4>
+        </h3>
         <p>
           {isProject
             ? projects[currentId].projectDescription

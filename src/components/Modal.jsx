@@ -26,19 +26,31 @@ function Modal(props) {
             tabIndex={0}
           />
         </div>
-        <img
-          src={isProject
-            ? projects[currentId].projectImage
-            : experiences[currentId].experienceLogo}
-          alt={isProject
-            ? projects[currentId].projectImageAlt
-            : experiences[currentId].experienceLogoAlt}
-        />
+        <div className="img-container">
+          <img
+            src={isProject
+              ? projects[currentId].projectImage
+              : experiences[currentId].experienceLogo}
+            alt={isProject
+              ? projects[currentId].projectImageAlt
+              : experiences[currentId].experienceLogoAlt}
+          />
+        </div>
         <h3>
           {isProject
             ? projects[currentId].projectName
             : experiences[currentId].experienceName}
         </h3>
+        <p className='centered-p-tag'>
+          {isProject
+            ? ""
+            : experiences[currentId].experienceRole}
+        </p>
+        <p className='centered-p-tag'>
+          {isProject
+            ? ""
+            : experiences[currentId].experienceStartDate + " - " + experiences[currentId].experienceEndDate}
+        </p>
         <p>
           {isProject
             ? projects[currentId].projectDescription
@@ -46,12 +58,8 @@ function Modal(props) {
         </p>
         <div className="project-tags-container">
           {isProject
-            ? projects[currentId].projectTags.map((tag) => {
-              <span key={currentId}>{tag}</span>
-            })
-            : experiences[currentId].experienceTags.map((tag) => {
-              <span key={currentId}>{tag}</span>
-            })}
+            ? projects[currentId].projectTags.map((value, index) => <span key={index}>{value}</span>)
+            : experiences[currentId].experienceTags.map((value, index) => <span key={index}>{value}</span>)}
         </div>
         <div className="project-link-container">
           <a
@@ -62,9 +70,8 @@ function Modal(props) {
             rel="noreferrer"
           >
             {isProject
-              ? 'Project '
-              : `${experiences[currentId].experienceName} `}
-            Website
+              ? 'Project Repository'
+              : `${experiences[currentId].experienceName} Website`}
           </a>
         </div>
       </div>

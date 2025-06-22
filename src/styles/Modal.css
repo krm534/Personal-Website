@@ -28,7 +28,12 @@
   padding-bottom: 20px;
 }
 
-.current-project>img {
+.img-container {
+  display: block;
+  border-bottom: 2px solid #000;
+}
+
+.current-project>.img-container>img {
   display: block;
   width: 100%;
   height: 300px;
@@ -106,6 +111,10 @@
 .exit-button-container>i:hover {
   color: #ab4a44;
   transition: 0.3s;
+}
+
+.centered-p-tag {
+  text-align: center !important;
 }
 
 @media screen and (max-width: 600px) {

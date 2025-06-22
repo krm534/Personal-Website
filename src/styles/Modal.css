@@ -39,7 +39,7 @@
   height: 300px;
 }
 
-.current-project>h3 {
+.current-project>h2 {
   margin-top: 20px;
   font-size: 24px;
 }
@@ -59,7 +59,7 @@
   margin-top: 25px;
 }
 
-.project-tags-container>span {
+.project-tags-container>a {
   color: #fff;
   display: inline-block;
   padding: 10px;
@@ -68,6 +68,11 @@
   margin-bottom: 5px;
   border-radius: 15px;
   background-color: #379437;
+}
+
+.project-tags-container>a:hover {
+  background-color: #2C762C;
+  transition: 0.3s;
 }
 
 .project-link-container {

@@ -22,14 +22,14 @@ function Experience() {
 
   return (
     <div id="experience" className="experience-container">
-      <h2>Experience</h2>
+      <h1>Experience</h1>
       <div className="experience-content-container">
         <div className="vertical" />
         {
           experiences.map((experience) => (
             <div className="experience-box" key={experience.experienceId}>
               <img src={experience.experienceLogo} alt={experience.experienceLogoAlt} />
-              <h3>{experience.experienceName}</h3>
+              <h2>{experience.experienceName}</h2>
               <ul>
                 <li>
                   <i className="fa fa-caret-right" />

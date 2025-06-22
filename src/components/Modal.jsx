@@ -36,11 +36,11 @@ function Modal(props) {
               : experiences[currentId].experienceLogoAlt}
           />
         </div>
-        <h3>
+        <h2>
           {isProject
             ? projects[currentId].projectName
             : experiences[currentId].experienceName}
-        </h3>
+        </h2>
         <p className='centered-p-tag'>
           {isProject
             ? ""
@@ -58,8 +58,8 @@ function Modal(props) {
         </p>
         <div className="project-tags-container">
           {isProject
-            ? projects[currentId].projectTags.map((value, index) => <span key={index}>{value}</span>)
-            : experiences[currentId].experienceTags.map((value, index) => <span key={index}>{value}</span>)}
+            ? projects[currentId].projectTags.map((value, index) => <a key={index} href={value[1]} target="_blank" rel="noopener noreferrer">{value[0]}</a>)
+            : experiences[currentId].experienceTags.map((value, index) => <a key={index} href={value[1]} target="_blank" rel="noopener noreferrer">{value[0]}</a>)}
         </div>
         <div className="project-link-container">
           <a
@@ -75,7 +75,7 @@ function Modal(props) {
           </a>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

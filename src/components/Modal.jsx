@@ -1,16 +1,24 @@
-import React from 'react';
 import { projects, experiences } from '../utils/Constants';
 import '../styles/Modal.css';
+import { useLocation, useNavigate } from 'react-router-dom'
 
-function Modal(props) {
-  const { setDialogShowing, currentId, isProject } = props;
+function Modal() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { currentId, isProject } = location.state;
+  document.body.style.overflowY = 'hidden';
+
+  const resetState = () => {
+    document.body.style.overflowY = 'scroll';
+    navigate(-1);
+  };
 
   return (
     <div className="project-details-container">
       <div
         className="project-details-background"
-        onClick={() => setDialogShowing(false)}
-        onKeyDown={() => setDialogShowing(false)}
+        onClick={() => resetState()}
+        onKeyDown={() => resetState()}
         role="button"
         aria-label="Dialog box's background can be used to close the modal"
         tabIndex={0}
@@ -19,8 +27,8 @@ function Modal(props) {
         <div className="exit-button-container">
           <i
             className="fa fa-close"
-            onClick={() => setDialogShowing(false)}
-            onKeyDown={() => setDialogShowing(false)}
+            onClick={() => resetState()}
+            onKeyDown={() => resetState()}
             role="button"
             aria-label="Dialog box's exit button in the right corner can be used to close the modal"
             tabIndex={0}

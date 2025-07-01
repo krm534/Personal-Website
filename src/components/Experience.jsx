@@ -1,25 +1,8 @@
-import React, { useState } from 'react';
 import '../styles/Experience.css';
 import { experiences } from '../utils/Constants';
-import Modal from './Modal';
+import { Link } from "react-router";
 
 function Experience() {
-  const [currentExperienceId, setCurrentExperienceId] = useState(0);
-  const [modalShowing, setModalShowing] = useState(false);
-
-  const handleButtonClick = (experienceId) => {
-    document.body.style.overflowY = 'hidden';
-    setCurrentExperienceId(experienceId);
-    setModalShowing(true);
-  };
-
-  const setExperienceModalShowing = (state) => {
-    if (!state) {
-      document.body.style.overflowY = 'scroll';
-    }
-    setModalShowing(state);
-  };
-
   return (
     <div id="experience" className="experience-container">
       <h1>Experience</h1>
@@ -44,21 +27,16 @@ function Experience() {
                   {experience.experienceEndDate}
                 </li>
               </ul>
-              <button type="button" onClick={() => handleButtonClick(experience.experienceId)}>
-                READ MORE
-              </button>
+              <Link to={`/experience/${experience.experienceId}`} state={{ currentId: experience.experienceId, isProject: false }}>
+                <button type="button" className="experienceReadMoreButton">
+                  READ MORE
+                </button>
+              </Link>
             </div>
           ))
         }
       </div>
-      {modalShowing && (
-        <Modal
-          currentId={currentExperienceId}
-          setDialogShowing={setExperienceModalShowing}
-          isProject={false}
-        />
-      )}
-    </div>
+    </div >
   );
 }
 

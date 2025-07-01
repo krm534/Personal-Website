@@ -40,7 +40,7 @@
   border-radius: 15px;
 }
 
-.project-box>button {
+.projectReadMoreButton {
   display: block;
   padding: 10px;
   margin: 0 auto;
@@ -54,7 +54,7 @@
   transition: 0.3s;
 }
 
-.project-box>button:hover {
+.projectReadMoreButton:hover {
   background-color: #587b9f;
   transition: 0.3s;
 }

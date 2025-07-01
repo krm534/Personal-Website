@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 function Modal() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { currentId, setDialogShowing, isProject } = location.state;
+  const { currentId, isProject } = location.state;
   document.body.style.overflowY = 'hidden';
 
   const resetState = () => {

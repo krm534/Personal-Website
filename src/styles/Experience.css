@@ -70,7 +70,7 @@
   margin-right: 10px;
 }
 
-.experience-box>button {
+.experienceReadMoreButton {
   display: block;
   padding: 10px;
   margin: 0 auto;
@@ -83,7 +83,7 @@
   transition: 0.3s;
 }
 
-.experience-box>button:hover {
+.experienceReadMoreButton:hover {
   background-color: #397562;
   transition: 0.3s;
 }

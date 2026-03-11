@@ -65,7 +65,7 @@ export const experiences = [
     experienceStartDate: 'May 2020',
     experienceEndDate: 'January 2022',
     experienceRole: 'Software Engineer',
-    experienceLogo: '/images/experience-images/kopis-mobile-logo.jpeg',
+    experienceLogo: '/images/experience-images/kopis-mobile-logo.jpg',
     experienceLogoAlt: 'Kopis Mobile job logo',
     experienceDescription: 'Designed, developed, tested, and maintained Android / Java applications for the defense sector. Built network-intense Android / Java applications that interfaced with external devices and adapters to eﬃciently transmit and receive data. Also, conﬁgured automated testing and deployment pipelines using Gitlab for a more autonomous development lifecycle. Participated in a fast-paced, agile development process where developers are expected to learn and adapt quickly.',
     experienceCompanyLink: 'https://www.crunchbase.com/organization/kopis-mobile',

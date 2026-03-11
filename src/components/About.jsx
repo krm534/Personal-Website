@@ -6,7 +6,7 @@ function About() {
   return (
     <div id="about" className="about-container">
       <h1>About</h1>
-      <img src="/images/kaleb-meeks-portrait.JPG" alt="Kaleb Meeks's portrait" />
+      <img src="/images/kaleb-meeks-portrait.jpg" alt="Kaleb Meeks's portrait" />
       <p>{ABOUT_ME_PARAGRAPH}</p>
       <div className="about-resume-container">
         <a href={ABOUT_ME_RESUME_URL} target="_blank" rel="noopener noreferrer">
